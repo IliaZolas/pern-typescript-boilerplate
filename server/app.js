@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
-// const bodyParser = require('body-parser');
+const port = 3001;
 
+// const bodyParser = require('body-parser');
 // app.use(bodyParser.json());
 
 // routing 
@@ -18,7 +19,7 @@ app.use((req, res, next) => {
 // routes
 app.use('/api/users', userRoutes);
 
-// error handling
-app.use((req, res, next) => {
-	throw new HttpError('Could not find this route', 404);
-});
+// check server
+app.listen(port, () => {
+	console.log(`Example app listening on port ${port}`)
+  });

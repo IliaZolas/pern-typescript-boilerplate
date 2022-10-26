@@ -67,4 +67,4 @@ function login() {
     }
 };
 
-export { getUser, getUsers, updateUser, deleteUser, signUp, login };
+module.exports =  { getUser, getUsers, updateUser, deleteUser, signUp, login };
