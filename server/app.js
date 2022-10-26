@@ -20,6 +20,12 @@ app.use((req, res, next) => {
 app.use('/api/users', userRoutes);
 
 // check server
+app.get("/", (req, res) => {
+	res.status(200).json({
+	  message: "server responding - app.ts",
+	});
+  });
+
 app.listen(port, () => {
 	console.log(`Example app listening on port ${port}`)
   });
