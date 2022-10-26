@@ -54,13 +54,15 @@ function deleteUser() {
 };
 
 // signup a new user | create
-function signUp() { async(req, res, next) => {
+function signUp() { 
+    async(req, res, next) => {
 
     }
 };
 
 // user login
-function login() { async(req, res, next) => {
+function login() { 
+    async(req, res, next) => {
 
     }
 };

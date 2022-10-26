@@ -3,29 +3,28 @@ const router = express.Router();
 
 const userController = require('../controllers/user-controller');
 
-//index
+// index
 router.get('/', userController.getUsers);
 
-//show
+// show
 router.get('/:userId', userController.getUserById);
 
-//create user
-router.post('/signup',userController.signUp
-);
+// create user
+router.post('/signup',userController.signUp);
 
-//update
+// update
 router.patch('/:userId', userController.updateUser);
 
-//delete
+// delete
 router.delete('/:userId', userController.deleteUser);
 
-//login
+// login
 router.post('/login', userController.login);
 
-//reset password
+// reset password
 router.post('/email-reset', userController.emailResetPassword);
 
-//Send email reset
+// Send email reset
 router.post('/reset-password/:resetToken', userController.resetPassword);
 
 module.exports = router;
