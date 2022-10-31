@@ -1,6 +1,9 @@
 CREATE DATABASE pern-typescript-boilerplate;
 
 CREATE TABLE user(
-  user_id SERIAL PRIMARY KEY,
-  description VARCHAR(255)
+  id INT,
+  fname VARCHAR(50),
+  lname VARCHAR(50),
+  email VARCHAR(50),
+  password VARCHAR(50)
 );
